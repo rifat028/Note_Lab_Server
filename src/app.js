@@ -11,5 +11,8 @@ app.get("/", async (req, res) => {
 });
 
 //------------routes-------------
+const demoProductRoutes = require("./Routes/demo-product.routes");
+
+app.use("/api/demo-products", demoProductRoutes);
 
 module.exports = app;
